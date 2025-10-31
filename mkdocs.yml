@@ -1,5 +1,5 @@
 site_name: Nonadiabatic Nanoreactor Use Guide
-site_url: https://mads-2.github.io/nanr-mkdocs-only/
+site_url: https://PieriLab.github.io/nanr-mkdocs-only/
 
 theme:
   name: material
