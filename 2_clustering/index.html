@@ -472,13 +472,11 @@
    <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>../full_geom_seam.xyz<span class="w"> </span>.
 </code></pre></div></p>
 </li>
-<li>
-<p><strong>Create <code>ref.xyz</code> from the first geometry in <code>full_geom_seam.xyz</code></strong><br />
+<li><strong>Create <code>ref.xyz</code> from the first geometry in <code>full_geom_seam.xyz</code></strong><br />
    This extracts the first XYZ frame (atom count + comment line + coordinates).
-   ```bash
-   num_atoms=$(head -n1 full_geom_seam.xyz)
-   head -n $((num_atoms + 2)) full_geom_seam.xyz &gt; ref.xyz</p>
-</li>
+   <div class="highlight"><pre><span></span><code><span class="nv">num_atoms</span><span class="o">=</span><span class="k">$(</span>head<span class="w"> </span>-n1<span class="w"> </span>full_geom_seam.xyz<span class="k">)</span>
+head<span class="w"> </span>-n<span class="w"> </span><span class="k">$((</span><span class="nv">num_atoms</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="k">))</span><span class="w"> </span>full_geom_seam.xyz<span class="w"> </span>&gt;<span class="w"> </span>ref.xyz
+</code></pre></div></li>
 <li>
 <p><strong>Create <code>clustering.yaml</code></strong>
    <div class="highlight"><pre><span></span><code><span class="nt">filenames</span><span class="p">:</span>
