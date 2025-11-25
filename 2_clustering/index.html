@@ -473,13 +473,6 @@
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>Create <code>ref.xyz</code> from the first geometry in <code>full_geom_seam.xyz</code></strong><br>
-This extracts the first structure (the first XYZ frame) and writes it to <code>ref.xyz</code> inside the clustering directory.
-   <div class="highlight"><pre><span></span><code>num_atoms=$(head -n1 full_geom_seam.xyz)
-head -n $((num_atoms + 2)) full_geom_seam.xyz > ref.xyz
-</code></pre></div></p>
-</li>
-<li>
 <p><strong>Create <code>clustering.yaml</code></strong>
    <div class="highlight"><pre><span></span><code><span class="nt">filenames</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">xyz_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">full_geom_seam.xyz</span><span class="w">     </span><span class="c1"># starting xyz file</span>
